@@ -940,10 +940,10 @@ void ID3D12GraphicsCommandListPreview::ConvertLinearAlgebraMatrix(
 
 *Valid Usage:* 
 
-* If SrcLayout is row-major or column-major, then SrcStride should be greater than the length of a row/column, and a
-  multiple of the element size.
-* If DestLayout is row-major or column-major, then DestStride should be greater than the length of a row/column, and a
-  multiple of 16.
+* If SrcLayout is row-major or column-major, then SrcStride should be no less than the length of a row/column, and a
+  multiple of the element byte size.
+* If DestLayout is row-major or column-major, then DestStride should be no less than the length of a row/column, and a
+  multiple of 16 bytes.
 * If SrcComponentType is not a supported MatrixInterpretation value as reported by CheckFeatureSupport() then
   SrcComponentType should be `D3D12_LINEAR_ALGEBRA_DATATYPE_FLOAT32`.
 * If DestComponentType is not a supported MatrixInterpretation value as reported by CheckFeatureSupport() then
