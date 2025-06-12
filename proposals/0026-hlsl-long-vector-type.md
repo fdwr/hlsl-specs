@@ -299,7 +299,7 @@ There's nothing about those use cases that is inherently incompatible with long 
 Swizzle operations were not supported because they are limited to the first four elements.
 The names of the accessors (xyzw or rgba) are named according to the expected content of
  those vectors in a graphics context.
-Since that intretation does not apply to longer vectors, it could be confusing.
+Since that interpretation does not apply to longer vectors, it could be confusing.
 The subscript access is flexible and generic and makes other accessors redundant.
 
 ## Open Issues
